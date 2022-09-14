@@ -12,4 +12,4 @@ def f(n):
 
 for i in range(35):
     if f(i) < 35:
-        print(f(i), f'при n == {i}')
+        print(i)
