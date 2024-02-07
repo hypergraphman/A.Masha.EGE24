@@ -1,9 +1,12 @@
 # s > 125 win
+# s > 160 lose
 # s + 1
 # s * 2
 def f(s, c, m):
     if c > m:
         return False
+    if s > 160:
+        return c % 2 != m % 2
     if s >= 126:
         return c % 2 == m % 2
     moves = [f(s + 1, c + 1, m),
